@@ -4,7 +4,7 @@ import css from './contactList.module.css';
 const Contacts = ({ contacts, removeContact }) => {
   console.log(contacts);
   const elements =
-    contacts &&
+    contacts.lenght > 0 &&
     contacts.map(({ name, number, id }) => {
       return (
         <Contact
