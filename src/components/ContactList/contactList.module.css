@@ -1,0 +1,22 @@
+.list {
+  padding: 0;
+}
+
+.item {
+  list-style: none;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-right: 30px;
+  width: 210px;
+}
+
+.btn {
+  background-color: inherit;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

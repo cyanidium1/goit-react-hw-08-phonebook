@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import * as api from '../../api/getter';
+import * as api from '../../api/contactsAPI';
 
 const isDublicate = ({ name }, items) => {
   const normalizedName = name.toLowerCase();
@@ -44,12 +44,12 @@ export const addContact = createAsyncThunk(
 
 export const removeContact = createAsyncThunk(
   'contacts/remove',
-  async (id, { rejectWithValue }) => {
+  async(id, {rejectWithValue}) => {
     try {
       await api.removeContact(id);
       return id;
     } catch (error) {
-      rejectWithValue(error);
+      rejectWithValue(error)
     }
   }
-);
+)

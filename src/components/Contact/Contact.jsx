@@ -5,7 +5,7 @@ import { useState } from 'react';
 // import PropTypes from 'prop-types';
 
 const Contact = props => {
-  const { name, id, phone, deleteItem } = props;
+  const { name, id, number, deleteItem } = props;
   console.log(props);
   const [state, changeState] = useState({
     backgroundColor: '#b2faa2',
@@ -18,7 +18,7 @@ const Contact = props => {
         {name}
       </p>
       <p className={css.tel} style={state}>
-        {phone}
+        {number}
       </p>
       <button
         onClick={e => {

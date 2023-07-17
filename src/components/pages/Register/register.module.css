@@ -1,0 +1,39 @@
+.form {
+  max-width: 300px;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.label {
+  display: inline-block;
+  width: 100px;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.input {
+  height: 25px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 0 auto;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 10px 5px;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.btn:hover {
+  background-color: #90b4ee;
+  color: #fff;
+}
+
